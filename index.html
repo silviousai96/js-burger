@@ -8,50 +8,78 @@
     <title>Burger</title>
 </head>
 <body>
-    <h1>Create your burger</h1>
+    <div class="container">
+        <div class="create">
+            <h1>Create your burger</h1>
+        </div>
+        
+        <div >
+            <label for="name"></label> 
+            <input id="name"  type="text" placeholder="Inserisci il tuo nome" >
+        </div>
 
-    <div>
-        <label for="cheese">Cheese (5€)</label>
-        <input id="cheese" class="add" type="checkbox" value="5">
-    </div>
+        <div class="ingredients">
+            <h2>Ingredients:</h2>
+            <span>
+                <img src="img/cheese.svg" alt="">
+                <label for="cheese">Cheese (5€)</label>
+                <input id="cheese" class="add" type="checkbox" value="5">
+            </span>
 
-    <div>
-        <label for="egg">Egg (5€)</label>
-        <input id="egg" class="add" type="checkbox" value="5">
-    </div>
-
-    <div>
-        <label for="mustard">Mustard (2€)</label>
-        <input id="mustard" class="add" type="checkbox" value="2">
-    </div>
-
-    <div>
-        <label for="tomato">Tomato (3€)</label>
-        <input id="tomato" class="add" type="checkbox" value="3">
-    </div>
-
-    <div>
-        <label for="lettuce">Lettuce (3€)</label>
-        <input id="lettuce" class="add" type="checkbox" value="3">
-    </div>
-
-    <div>
-        <label for="ketchup">Ketchup (2€)</label>
-        <input id="ketchup" class="add" type="checkbox" value="2">
-    </div>
+            <span>
+                <img src="img/fried-egg.svg" alt="">
+                <label for="egg">Egg (5€)</label>
+                <input id="egg" class="add" type="checkbox" value="5">
+            </span>
+        </div>
+       
+        <div class="ingredients">
+            <span>
+                <img src="img/mustard.svg" alt="">
+                <label for="mustard">Mustard (2€)</label>
+                <input id="mustard" class="add" type="checkbox" value="2">
+            </span>
     
-    <div>
-        <label for="discount">Codice discount</label> 
-        <input id="discount"  type="text" name="" >
-    </div>
-   
-    <div>
-        <button id="calculate">Calculate</button>
-    </div>
+            <span>
+                <img src="img/tomato.svg" alt="">
+                <label for="tomato">Tomato (3€)</label>
+                <input id="tomato" class="add" type="checkbox" value="3">
+            </span>
+        </div>
 
-    <div id="prezzo-finale">
+        <div class="ingredients">
+            <span>
+                <img src="img/lettuce.svg" alt="">
+                <label for="lettuce">Lettuce (3€)</label>
+                <input id="lettuce" class="add" type="checkbox" value="3">
+            </span>
+    
+            <span>
+                <img src="img/ketchup.svg" alt="">
+                <label for="ketchup">Ketchup (2€)</label>
+                <input id="ketchup" class="add" type="checkbox" value="2">
+            </span>
+        </div>        
+                
+        <div class="dsc">
+            <label for="discount">Discount Coupon:</label> 
+            <input id="discount"  type="text" name="" >
+        </div>
+    
+        <div class="clc">
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <div class="final-price">
+            <h2>Your Price:</h2>
+            <span id="prezzo-finale"></span>
+        </div>
+        
+
         
     </div>
+    
+    
 
 
 

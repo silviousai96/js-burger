@@ -2,8 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial';
 }
 
-div {
-    padding: 20px;
+img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.container {
+    width: 50%;    
+    background-color: white;
+}
+
+.create {
+    background-color: #fdbc41;
+    color: black;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#name {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+}
+
+.ingredients {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.ingredients h2 {
+    padding-bottom: 10px;
+}
+
+.ingredients span {
+    padding-right: 150px;
+    
+}
+
+.dsc {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.dsc input {
+    padding: 5px 30px;
+    background-color: pink ;
+    border: 1px solid pink;
+    border-radius: 3px;
+}
+
+.clc {
+    text-align: center; 
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.clc button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+
+.final-price {
+    background-color: #d23359;
+    color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.final-price h2 {
+    display: inline-block;
+}
+
+#prezzo-finale {
+    padding-left: 350px;
+    font-weight: bold;
+    font-size: 30px;
 }

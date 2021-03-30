@@ -3,10 +3,11 @@
 
 var calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener ('click', function(){
-    
+    //prezzo standard panino
     var prezzoBurger = 10;
     
-
+    //ciclo per vedere quali ingredienti sono stati checkkati 
+    //e sommare il prezzo degli ingedienti al panino.
     var addCheckboxes = document.getElementsByClassName('add');
     
     for( var i=0; i < addCheckboxes.length; i++) {
@@ -40,7 +41,7 @@ calculateButton.addEventListener ('click', function(){
     }
 
     //stampo il risultato del prezzo finale
-    document.getElementById('prezzo-finale').innerHTML = 'Prezzo: ' + prezzoBurger + '€';
+    document.getElementById('prezzo-finale').innerHTML = '€' + prezzoBurger;
 });
 
 
