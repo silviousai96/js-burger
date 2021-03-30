@@ -5,6 +5,7 @@ var calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener ('click', function(){
     
     var prezzoBurger = 10;
+    
 
     var addCheckboxes = document.getElementsByClassName('add');
     
@@ -19,6 +20,25 @@ calculateButton.addEventListener ('click', function(){
             prezzoBurger = prezzoBurger + price;
         }
     }
+
+    //CONTROLLO CODICE DISCOUNT    
+    //array con i codici sconto validi
+    var arrayDiscount = ["ZX789CV", "AS123DF", "QW789ER"];
+
+    //inserisco la input del codice sconto in una variabile
+    var inputDiscount = document.getElementById('discount');
+    var codeDiscount = inputDiscount.value;
+    console.log('discount: ' + codeDiscount);
+
+    //uso .includes per vedere se l' input del codice sconto è incluso nell'array dei codici sconto validi
+    var n = arrayDiscount.includes(codeDiscount);
+    console.log(n);
+
+    //se il codice è presente mi darà true, quindi applico lo sconto del 15%
+    if ( n == true) {
+        prezzoBurger = prezzoBurger - (prezzoBurger * 0.15);
+    }
+
     //stampo il risultato del prezzo finale
     document.getElementById('prezzo-finale').innerHTML = 'Prezzo: ' + prezzoBurger + '€';
 });
